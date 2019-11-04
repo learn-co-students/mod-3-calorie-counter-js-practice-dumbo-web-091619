@@ -1,1 +1,2 @@
 // your code here, it may be worth it to ensure this file only runs AFTER the dom has loaded.
+// prolly gonna skip this one bc oof calorie counting really not the content i need going into my brain rn.
