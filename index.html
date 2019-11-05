@@ -10,7 +10,7 @@
   <link rel="stylesheet" type="text/css" media="screen" href="main.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
-  <script src="main.js"></script>
+  <script defer src="main.js"></script>
 </head>
 
 <body>
@@ -26,13 +26,13 @@
       <form id="bmr-calulator" class="uk-card-header">
         <h3>Basal Metabolic Rate</h3>
         <div class="uk-margin-small">
-          <input class="uk-input" type="number" placeholder="Weight (lbs)" min="1">
+          <input id='weight_in_pounds' class="uk-input" type="number" placeholder="Weight (lbs)" min="1">
         </div>
         <div class="uk-margin-small">
-          <input class="uk-input" type="number" placeholder="Height (inches)" min="1">
+          <input id='heigt_in_inches' class="uk-input" type="number" placeholder="Height (inches)" min="1">
         </div>
         <div class="uk-margin-small">
-          <input class="uk-input" type="number" placeholder="Age (years)" min="1">
+          <input id='age_in_years' class="uk-input" type="number" placeholder="Age (years)" min="1">
         </div>
         <button class="uk-button uk-button-default"
           uk-tooltip="title: BMR (Basal Metabolic Rate) is the number of calories required to keep your body functioning at rest. This is the amount of calories your body burns even if you did nothing all day.; pos: left">Calculate
@@ -131,7 +131,7 @@
           <div class="uk-margin-small">
             <textarea type="text" class="uk-textarea" placeholder="Notes" style="resize:none"></textarea>
           </div>
-          <button class="uk-button uk-button-default">Update Entry</button>
+          <button class="uk-button uk-button-default uk-close-modal">Update Entry</button>
         </div>
       </form>
     </div>
